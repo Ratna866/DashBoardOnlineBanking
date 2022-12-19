@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>DashBoard</h2>
+
+    @if(User.IsInRole("Admin") || User.IsInRole("User"))
+            {
+                @Html.ActionLink("Register New User","Register","Login")<span> | </span>
+            }
+
+    @Html.ActionLink("Change Password","Change Password","ChangePassword")
+
+
+
+</p>
